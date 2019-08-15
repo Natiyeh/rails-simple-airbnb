@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <h3><%= @flat.name %></h3>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5><%= @flat.address %></h5>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h6><%= @flat.description %></h6>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <i class="fas fa-dollar-sign">2</i>
+    <i class="fas fa-user-friends">1</i>  </div>
+</div>
+<button type="button" class="btn btn-primary text-white"><%= link_to 'edit', edit_flat_path(@flat) %></button>
+<button type="button" class="btn btn-primary text-white"><%= link_to 'delete', flat_path(@flat), method: :delete %></button>
